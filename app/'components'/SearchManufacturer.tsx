@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import { SearchManufacturerProps } from '../types'
 import { Combobox, Transition} from '@headlessui/react';
 import Image from 'next/image';
@@ -27,6 +27,19 @@ const SearchManufacturer = ({manufacturer, setManufacturer}: SearchManufacturerP
                     onChange={(e) => setQuery(e.target.value)}/>
             </div>
         </Combobox>
+        <Transition
+            as={Fragment}
+            leave="transition ease-in duration-100"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+            afterLeave={() =>
+                setQuery('')
+            }>
+                <Combobox.Options>
+                    
+                </Combobox.Options>
+            
+        </Transition>
     </div>
   )
 }
