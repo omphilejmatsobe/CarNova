@@ -36,7 +36,7 @@ const SearchMake = ({ manufacturer, setManufacturer }: SearchMakeProps) => {
             className='search-manufacturer__input'
             displayValue={(item: string) => item}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder='Volkswagen...'
+            placeholder='Find a Car...'
           />
           <Transition
             as={Fragment}
