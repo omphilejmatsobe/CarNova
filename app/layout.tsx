@@ -5,7 +5,7 @@ import Navbar from "./'components'/nav";
 import Footer from "./'components'/footer";
 
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "CarNova - Car Rental in South Africa ",
   description: "Discover affordable cars in the world",
 };
 

@@ -1,6 +1,6 @@
 "use client"
 import React, { use, useState } from 'react'
-import SearchManufacturer from './SearchManufacturer'
+import SearchMake from './SearchManufacturer';
 
 export default function Search() {
     
@@ -13,7 +13,7 @@ export default function Search() {
   return (
     <form className='searchbar' onSubmit={handleSearch}>
         <div className='searchbar__item'>
-            <SearchManufacturer
+            <SearchMake
                 manufacturer = {manufacturer}
                 setManufacturer = {setManufacturer}
 
