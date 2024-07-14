@@ -9,7 +9,7 @@ export default async function Home() {
 
   const res = await fetchCars();
   
-  const isInfoEmpty = !Array.isArray(res) || res.length < 1 || !res;
+  const isInfoEmpty = !Array.isArray(res) || res.length < 1 || !res;   
 
   return (
     <main className="overflow-hidden">
