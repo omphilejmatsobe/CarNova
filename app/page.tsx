@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Hero from "./'components'/hero";
-import Search from "./'components'/search";
-import CustomFilter from "./'components'/filter";
+import Hero from "./(components)/hero";
+import Search from "./(components)/search";
+import CustomFilter from "./(components)/filter";
 import { fetchCars } from "./utils";
-import Carcard from "./'components'/carcard";
+import Carcard from "./(components)/carcard";
 
 export default async function Home() {
 
